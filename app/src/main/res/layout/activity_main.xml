@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/cardview_light_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -26,7 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/icono_club_deportivo" />
+            android:src="@drawable/icono_club_deportivo"
+            tools:ignore="ContentDescription" />
 
     </androidx.cardview.widget.CardView>
 
@@ -45,8 +48,8 @@
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="@+id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
-
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.35"
+        tools:ignore="HardcodedText" />
 
     <!-- SubTitulo Login -->
     <TextView
@@ -63,27 +66,86 @@
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="@+id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="HardcodedText" />
 
 
     <!-- Usuario con Material Design -->
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/main"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        app:layout_constraintVertical_bias="0.63"
+        android:background="@drawable/bg_text_input"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="114dp"
+        >
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20sp"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/etUser"
+        app:layout_constraintEnd_toEndOf="@+id/etUser"
+        app:layout_constraintStart_toStartOf="@+id/etUser"
+        app:layout_constraintTop_toTopOf="@+id/etUser"
+        tools:ignore="HardcodedText" />
+
+    <!-- Contraseña con Material Design -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_text_input"
         app:boxCornerRadiusBottomEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
         app:boxCornerRadiusTopStart="8dp"
         app:boxStrokeColor="#2196F3"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/main"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        app:layout_constraintVertical_bias="0.75"
+        app:passwordToggleEnabled="true"
+        >
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPassword"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_margin="20sp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutPassword"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutPassword"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutPassword"
+        tools:ignore="HardcodedText" />
 
-    <!-- Contraseña con Material Design -->
-
-
+    <!-- Botón acceder-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
         android:layout_width="match_parent"
@@ -99,52 +161,24 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
-        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintVertical_bias="0.90"
+        tools:ignore="HardcodedText" />
 
-        />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etUsuario"
-        android:layout_width="359dp"
-        android:layout_height="44dp"
-        android:hint="Usuario"
-        android:inputType="text"
-        android:maxLines="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etPassword"
-        android:layout_width="368dp"
-        android:layout_height="47dp"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.395"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
-        app:layout_constraintVertical_bias="0.709" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+    <!-- Texto Forgot your password -->
+    <TextView
+        android:id="@+id/textForgot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxCornerRadiusBottomEnd="8dp"
-        app:boxCornerRadiusBottomStart="8dp"
-        app:boxCornerRadiusTopEnd="8dp"
-        app:boxCornerRadiusTopStart="8dp"
-        app:boxStrokeColor="#2196F3"
-        app:passwordToggleEnabled="true"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="495dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
+        android:gravity="center"
+        android:text="FORGOT YOUR PASSOWORD?"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/main"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        app:layout_constraintVertical_bias="0.92"
+        tools:ignore="HardcodedText,SmallSp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
