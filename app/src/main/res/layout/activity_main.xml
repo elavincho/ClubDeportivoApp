@@ -105,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="@+id/etUser"
         app:layout_constraintStart_toStartOf="@+id/etUser"
         app:layout_constraintTop_toTopOf="@+id/etUser"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
 
     <!-- Contraseña con Material Design -->
 
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="@+id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
         app:layout_constraintVertical_bias="0.90"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <!-- Texto Forgot your password -->
     <TextView
