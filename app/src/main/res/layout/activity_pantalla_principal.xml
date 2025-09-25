@@ -8,6 +8,7 @@
     tools:context=".PantallaPrincipalActivity">
 
 
+
     <!-- Header Club Deportivo -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -46,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.150"
 
-        />
+        tools:targetApi="31" />
 
     <TextView
         android:id="@+id/txtRegistrar"
@@ -64,7 +65,8 @@
         app:layout_constraintStart_toStartOf="@+id/registrar"
         app:layout_constraintTop_toTopOf="@+id/registrar"
         app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:targetApi="31" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -92,7 +94,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15"
 
-        />
+        tools:targetApi="31" />
 
     <TextView
         android:id="@+id/txtCobrar"
@@ -110,7 +112,8 @@
         app:layout_constraintStart_toStartOf="@+id/viewCobrar"
         app:layout_constraintTop_toTopOf="@+id/viewCobrar"
         app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:targetApi="31" />
 
     <ImageView
         android:id="@+id/imageViewCobrar"
@@ -138,7 +141,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.450"
 
-        />
+        tools:targetApi="31" />
 
     <TextView
         android:id="@+id/txtCarnet"
@@ -156,7 +159,8 @@
         app:layout_constraintStart_toStartOf="@+id/carnet"
         app:layout_constraintTop_toTopOf="@+id/carnet"
         app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:targetApi="31" />
 
     <ImageView
         android:id="@+id/imageWhisky"
@@ -184,7 +188,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.450"
-        />
+        tools:targetApi="31" />
 
     <TextView
         android:id="@+id/txtSocios"
@@ -202,7 +206,8 @@
         app:layout_constraintStart_toStartOf="@+id/socios"
         app:layout_constraintTop_toTopOf="@+id/socios"
         app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:targetApi="31" />
 
     <ImageView
         android:id="@+id/imageViewSocios"
@@ -232,7 +237,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.750"
 
-        />
+        tools:targetApi="31" />
 
     <TextView
         android:id="@+id/txtVencimientos"
@@ -250,7 +255,8 @@
         app:layout_constraintStart_toStartOf="@+id/vencimientos"
         app:layout_constraintTop_toTopOf="@+id/vencimientos"
         app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:targetApi="31" />
 
     <ImageView
         android:id="@+id/imageVencimientos"
@@ -310,6 +316,29 @@
         app:layout_constraintTop_toTopOf="@+id/salir"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="ContentDescription" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
