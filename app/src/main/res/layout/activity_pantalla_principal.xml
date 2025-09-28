@@ -37,8 +37,8 @@
     <!-- Registrar Socios -->
     <View
         android:id="@+id/registrar"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.150"
-
+        android:layout_margin="20dp"
         tools:targetApi="31" />
 
     <TextView
@@ -57,14 +57,14 @@
         android:gravity="center_vertical"
         android:text="REGISTRAR SOCIOS"
         android:textColor="@android:color/system_accent1_900"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/registrar"
         app:layout_constraintEnd_toEndOf="@+id/registrar"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.70"
         app:layout_constraintStart_toStartOf="@+id/registrar"
         app:layout_constraintTop_toTopOf="@+id/registrar"
-        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_bias="0.5"
         tools:ignore="HardcodedText"
         tools:targetApi="31" />
 
@@ -75,13 +75,13 @@
         android:src="@drawable/mult_usuarios"
         app:layout_constraintBottom_toBottomOf="@+id/registrar"
         app:layout_constraintEnd_toEndOf="@+id/registrar"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@+id/registrar"
         app:layout_constraintTop_toTopOf="@+id/registrar"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="ContentDescription" />
 
-    <!-- Cobrar Cuota-->
+    <!-- Cobrar Cuota, por ahora lo dejo abajo para poder cambiar el diseño-->
     <View
         android:id="@+id/viewCobrar"
         android:layout_width="150dp"
@@ -92,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintVertical_bias="0.99"
 
         tools:targetApi="31" />
 
@@ -140,7 +140,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.450"
-
         tools:targetApi="31" />
 
     <TextView
