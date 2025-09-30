@@ -92,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
+        app:layout_constraintVertical_bias="0.750"
 
         tools:targetApi="31" />
 
@@ -274,15 +274,16 @@
     <!-- Salir-->
     <View
         android:id="@+id/salir"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:background="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.170"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.750"
+        app:layout_constraintVertical_bias="0.970"
+        android:layout_margin="20dp"
         />
 
     <TextView
@@ -293,24 +294,24 @@
         android:gravity="center_vertical"
         android:text="SALIR"
         android:textColor="@android:color/white"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/salir"
         app:layout_constraintEnd_toEndOf="@+id/salir"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="@+id/salir"
         app:layout_constraintTop_toTopOf="@+id/salir"
-        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_bias="0.5"
         tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageViewSalir"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:src="@drawable/apagar"
         app:layout_constraintBottom_toBottomOf="@+id/salir"
         app:layout_constraintEnd_toEndOf="@+id/salir"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@+id/salir"
         app:layout_constraintTop_toTopOf="@+id/salir"
         app:layout_constraintVertical_bias="0.5"
