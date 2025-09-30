@@ -37,16 +37,15 @@
     <!-- Registrar Socios -->
     <View
         android:id="@+id/registrar"
-        android:layout_width="match_parent"
+        android:layout_width="85dp"
         android:layout_height="85dp"
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.170"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150"
-        android:layout_margin="20dp"
+        app:layout_constraintVertical_bias="0.15"
         tools:targetApi="31" />
 
     <TextView
@@ -57,28 +56,28 @@
         android:gravity="center_vertical"
         android:text="REGISTRAR SOCIOS"
         android:textColor="@android:color/system_accent1_900"
-        android:textSize="20sp"
+        android:textSize="8sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/registrar"
         app:layout_constraintEnd_toEndOf="@+id/registrar"
         app:layout_constraintHorizontal_bias="0.70"
         app:layout_constraintStart_toStartOf="@+id/registrar"
         app:layout_constraintTop_toTopOf="@+id/registrar"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.9"
         tools:ignore="HardcodedText"
         tools:targetApi="31" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/mult_usuarios"
         app:layout_constraintBottom_toBottomOf="@+id/registrar"
         app:layout_constraintEnd_toEndOf="@+id/registrar"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/registrar"
         app:layout_constraintTop_toTopOf="@+id/registrar"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
         tools:ignore="ContentDescription" />
 
     <!-- Cobrar Cuota, por ahora lo dejo abajo para poder cambiar el diseño-->
