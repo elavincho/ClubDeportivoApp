@@ -83,8 +83,8 @@
     <!-- Cobrar Cuota, por ahora lo dejo abajo para poder cambiar el diseño-->
     <View
         android:id="@+id/viewCobrar"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         android:gravity="center_vertical"
         android:text="COBRAR CUOTA"
         android:textColor="@android:color/system_accent1_900"
-        android:textSize="15sp"
+        android:textSize="8sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
         app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
@@ -116,22 +116,22 @@
 
     <ImageView
         android:id="@+id/imageViewCobrar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/billetera_azul"
         app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
         app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/viewCobrar"
         app:layout_constraintTop_toTopOf="@+id/viewCobrar"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
         tools:ignore="ContentDescription" />
 
     <!-- Entregar Carnet -->
     <View
         android:id="@+id/carnet"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,7 +149,7 @@
         android:gravity="center_vertical"
         android:text="ENTREGAR CARNET"
         android:textColor="@android:color/system_accent1_900"
-        android:textSize="15sp"
+        android:textSize="8sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/carnet"
         app:layout_constraintEnd_toEndOf="@+id/carnet"
@@ -162,15 +162,15 @@
 
     <ImageView
         android:id="@+id/imageWhisky"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/carnet"
         app:layout_constraintBottom_toBottomOf="@+id/carnet"
         app:layout_constraintEnd_toEndOf="@+id/carnet"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/carnet"
         app:layout_constraintTop_toTopOf="@+id/carnet"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
         tools:ignore="ContentDescription" />
 
 
