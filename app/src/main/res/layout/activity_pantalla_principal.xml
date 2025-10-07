@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PantallaPrincipalActivity">
-
+    tools:context=".PantallaPrincipalActivity"
+    tools:ignore="ExtraText">
 
 
     <!-- Header Club Deportivo -->
@@ -26,9 +26,9 @@
             android:id="@+id/imageViewLogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/img_club_deportivo"
-            android:adjustViewBounds="true"
             tools:ignore="ContentDescription" />
 
     </androidx.cardview.widget.CardView>
@@ -42,7 +42,7 @@
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15"
@@ -88,10 +88,10 @@
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="1.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.750"
+        app:layout_constraintVertical_bias="0.150"
 
         tools:targetApi="31" />
 
@@ -135,10 +135,10 @@
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.170"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.450"
+        app:layout_constraintVertical_bias="0.150"
         tools:targetApi="31" />
 
     <TextView
@@ -177,15 +177,15 @@
     <!-- Listar Socios-->
     <View
         android:id="@+id/socios"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.450"
+        app:layout_constraintVertical_bias="0.150"
         tools:targetApi="31" />
 
     <TextView
@@ -196,7 +196,7 @@
         android:gravity="center_vertical"
         android:text="LISTAR SOCIOS"
         android:textColor="@android:color/system_accent1_900"
-        android:textSize="15sp"
+        android:textSize="8sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/socios"
         app:layout_constraintEnd_toEndOf="@+id/socios"
@@ -209,8 +209,8 @@
 
     <ImageView
         android:id="@+id/imageViewSocios"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/lista"
         app:layout_constraintBottom_toBottomOf="@+id/socios"
         app:layout_constraintEnd_toEndOf="@+id/socios"
@@ -221,19 +221,18 @@
         tools:ignore="ContentDescription" />
 
 
-
     <!-- Vencimientos del Día -->
     <View
         android:id="@+id/vencimientos"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:background="@android:color/system_accent1_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.170"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.750"
+        app:layout_constraintVertical_bias="0.150"
 
         tools:targetApi="31" />
 
@@ -245,7 +244,7 @@
         android:gravity="center_vertical"
         android:text="VENCIMIENTOS DEL DÍA"
         android:textColor="@android:color/system_accent1_900"
-        android:textSize="15sp"
+        android:textSize="7sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
         app:layout_constraintEnd_toEndOf="@+id/vencimientos"
@@ -258,8 +257,8 @@
 
     <ImageView
         android:id="@+id/imageVencimientos"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/calendario"
         app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
         app:layout_constraintEnd_toEndOf="@+id/vencimientos"
@@ -275,15 +274,14 @@
         android:id="@+id/salir"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_margin="20dp"
         android:background="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.170"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.970"
-        android:layout_margin="20dp"
-        />
+        app:layout_constraintVertical_bias="0.970" />
 
     <TextView
         android:id="@+id/txtSalir"
@@ -315,34 +313,6 @@
         app:layout_constraintTop_toTopOf="@+id/salir"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="ContentDescription" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
