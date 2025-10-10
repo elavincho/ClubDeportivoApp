@@ -12,14 +12,15 @@
         <shape android:shape="rectangle">
             <!-- Borde transparente de 2dp -->
             <stroke
-                android:width="2dp"
-                android:color="#92C5FC" />
+                android:width="1dp"
+                android:color="#051E64" />
 
             <!-- Esquinas ligeramente redondeadas -->
             <corners android:radius="10dp" />
 
             <!-- Fondo azul cielo -->
-            <solid android:color="#92C5FC" />
+<!--            <solid android:color="#92C5FC"-->
+            <solid android:color="#FFFFFF"/>
 
 
         </shape>

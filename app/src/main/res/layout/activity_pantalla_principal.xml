@@ -1,325 +1,676 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PantallaPrincipalActivity"
-    tools:ignore="ExtraText">
+    android:fillViewport="true">
 
-
-    <!-- Header Club Deportivo -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/main"
-        app:layout_constraintEnd_toEndOf="@+id/main"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/main"
-        app:layout_constraintTop_toTopOf="@+id/main"
-        app:layout_constraintVertical_bias="0">
+        tools:context=".PantallaPrincipalActivity"
+        tools:ignore="ExtraText">
 
-        <ImageView
-            android:id="@+id/imageViewLogo"
+
+        <!-- Header Club Deportivo -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_club_deportivo"
-            tools:ignore="ContentDescription" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/main"
+            app:layout_constraintEnd_toEndOf="@+id/main"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/main"
+            app:layout_constraintTop_toTopOf="@+id/main"
+            app:layout_constraintVertical_bias="0">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_club_deportivo"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
 
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- Tarjeta 1: Registrar Socios -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginEnd="15dp">
+
+                    <View
+                        android:id="@+id/registrar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_image_view"
+                        tools:targetApi="31" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mult_usuarios"
+                        app:layout_constraintBottom_toBottomOf="@+id/registrar"
+                        app:layout_constraintEnd_toEndOf="@+id/registrar"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/registrar"
+                        app:layout_constraintTop_toTopOf="@+id/registrar"
+                        app:layout_constraintVertical_bias="0.2"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/txtRegistrar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="REGISTRAR SOCIOS"
+                        android:textColor="@android:color/system_accent1_900"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/registrar"
+                        app:layout_constraintEnd_toEndOf="@+id/registrar"
+                        app:layout_constraintStart_toStartOf="@+id/registrar"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="31" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Tarjeta 2: Cobrar Cuota -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginEnd="15dp">
+
+                    <View
+                        android:id="@+id/viewCobrar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_image_view"
+                        tools:targetApi="31" />
+
+                    <ImageView
+                        android:id="@+id/imageViewCobrar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/billetera_azul"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
+                        app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/viewCobrar"
+                        app:layout_constraintTop_toTopOf="@+id/viewCobrar"
+                        app:layout_constraintVertical_bias="0.3"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/txtCobrar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="COBRAR CUOTA"
+                        android:textColor="@android:color/system_accent1_900"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
+                        app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
+                        app:layout_constraintStart_toStartOf="@+id/viewCobrar"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewCobrar"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="31" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Tarjeta 3: Entregar Carnet -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginEnd="15dp">
+
+                    <View
+                        android:id="@+id/carnet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_image_view"
+                        tools:targetApi="31" />
+
+                    <ImageView
+                        android:id="@+id/imageWhisky"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/carnet"
+                        app:layout_constraintBottom_toBottomOf="@+id/carnet"
+                        app:layout_constraintEnd_toEndOf="@+id/carnet"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/carnet"
+                        app:layout_constraintTop_toTopOf="@+id/carnet"
+                        app:layout_constraintVertical_bias="0.3"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/txtCarnet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="ENTREGAR CARNET"
+                        android:textColor="@android:color/system_accent1_900"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/carnet"
+                        app:layout_constraintEnd_toEndOf="@+id/carnet"
+                        app:layout_constraintStart_toStartOf="@+id/carnet"
+                        app:layout_constraintTop_toBottomOf="@+id/imageWhisky"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="31" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Tarjeta 4: Listar Socios -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginEnd="15dp">
+
+                    <View
+                        android:id="@+id/socios"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_image_view"
+                        tools:targetApi="31" />
+
+                    <ImageView
+                        android:id="@+id/imageViewSocios"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/lista"
+                        app:layout_constraintBottom_toBottomOf="@+id/socios"
+                        app:layout_constraintEnd_toEndOf="@+id/socios"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/socios"
+                        app:layout_constraintTop_toTopOf="@+id/socios"
+                        app:layout_constraintVertical_bias="0.5"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/txtSocios"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="LISTAR SOCIOS"
+                        android:textColor="@android:color/system_accent1_900"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/socios"
+                        app:layout_constraintEnd_toEndOf="@+id/socios"
+                        app:layout_constraintStart_toStartOf="@+id/socios"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewSocios"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="31" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Tarjeta 5: Vencimientos del Día -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginEnd="15dp">
+
+                    <View
+                        android:id="@+id/vencimientos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_image_view"
+                        tools:targetApi="31" />
+
+                    <ImageView
+                        android:id="@+id/imageVencimientos"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/calendario"
+                        app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
+                        app:layout_constraintEnd_toEndOf="@+id/vencimientos"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/vencimientos"
+                        app:layout_constraintTop_toTopOf="@+id/vencimientos"
+                        app:layout_constraintVertical_bias="0.5"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/txtVencimientos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="VENCIMIENTOS DEL DÍA"
+                        android:textColor="@android:color/system_accent1_900"
+                        android:textSize="7sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
+                        app:layout_constraintEnd_toEndOf="@+id/vencimientos"
+                        app:layout_constraintStart_toStartOf="@+id/vencimientos"
+                        app:layout_constraintTop_toBottomOf="@+id/imageVencimientos"
+                        tools:ignore="HardcodedText"
+                        tools:targetApi="31" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <!-- Tarjeta 6: Spinning -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/spinningLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+            <View
+                android:id="@+id/spinning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="31" />
+
+            <ImageView
+                android:id="@+id/imageViewSpinning"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/spining"
+                app:layout_constraintBottom_toBottomOf="@+id/spinning"
+                app:layout_constraintEnd_toEndOf="@+id/spinning"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/spinning"
+                app:layout_constraintTop_toTopOf="@+id/spinning"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtSpinning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Spinning"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/spinning"
+                app:layout_constraintEnd_toEndOf="@+id/spinning"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="@+id/spinning"
+                app:layout_constraintTop_toTopOf="@+id/spinning"
+                app:layout_constraintVertical_bias="0"
+                tools:ignore="HardcodedText"
+
+                tools:targetApi="31" />
+
+            <TextView
+                android:id="@+id/txtSpinningContenido"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Esta disciplina no solo mejora significativamente la capacidad pulmonar y la resistencia física, sino que también es excelente para quemar calorías y fortalecer el sistema cardiovascular."
+                android:textAlignment="inherit"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/spinning"
+                app:layout_constraintEnd_toEndOf="@+id/spinning"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/spinning"
+                app:layout_constraintTop_toTopOf="@+id/spinning"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="HardcodedText"
+                tools:targetApi="31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Tarjeta 7: Boxeo -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/boxeoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinningLayout">
+
+            <View
+                android:id="@+id/boxeo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="31" />
+
+            <ImageView
+                android:id="@+id/imageViewBoxeo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/boxeo"
+                app:layout_constraintBottom_toBottomOf="@+id/boxeo"
+                app:layout_constraintEnd_toEndOf="@+id/boxeo"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@+id/boxeo"
+                app:layout_constraintTop_toTopOf="@+id/boxeo"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtBoxeo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Boxeo"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/boxeo"
+                app:layout_constraintEnd_toEndOf="@+id/boxeo"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/boxeo"
+                app:layout_constraintTop_toTopOf="@+id/boxeo"
+                app:layout_constraintVertical_bias="0"
+                tools:ignore="HardcodedText"
+
+                tools:targetApi="31" />
+
+            <TextView
+                android:id="@+id/txtBoxeoContenido"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:text=" Su práctica desarrolla una condición física excepcional, mejorando la resistencia cardiovascular, la fuerza explosiva, la velocidad de reacción y la coordinación."
+                android:textAlignment="inherit"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/boxeo"
+                app:layout_constraintEnd_toEndOf="@+id/boxeo"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/boxeo"
+                app:layout_constraintTop_toTopOf="@+id/boxeo"
+                app:layout_constraintVertical_bias="0.95"
+                tools:ignore="HardcodedText"
+                tools:targetApi="31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Tarjeta 7: Nutrición -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nutricionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boxeoLayout">
+
+            <View
+                android:id="@+id/nutricion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="31" />
+
+            <ImageView
+                android:id="@+id/imageViewNutricion"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/nutricionista"
+                app:layout_constraintBottom_toBottomOf="@+id/nutricion"
+                app:layout_constraintEnd_toEndOf="@+id/nutricion"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/nutricion"
+                app:layout_constraintTop_toTopOf="@+id/nutricion"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtNutricion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Nutrición"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/nutricion"
+                app:layout_constraintEnd_toEndOf="@+id/nutricion"
+                app:layout_constraintHorizontal_bias="0.605"
+                app:layout_constraintStart_toStartOf="@+id/nutricion"
+                app:layout_constraintTop_toTopOf="@+id/nutricion"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="HardcodedText"
+
+                tools:targetApi="31" />
+
+            <TextView
+                android:id="@+id/txtNutricionContenido"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:text="La supervisión profesional garantiza que cada deportista reciba la atención necesaria para potenciar su entrenamiento, competir al máximo nivel y mantener un estado de salud óptimo, convirtiendo la alimentación en una ventaja competitiva decisiva."
+                android:textAlignment="inherit"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/nutricion"
+                app:layout_constraintEnd_toEndOf="@+id/nutricion"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/nutricion"
+                app:layout_constraintTop_toTopOf="@+id/nutricion"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="HardcodedText"
+                tools:targetApi="31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Tarjeta 8: Musculación -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/musculacionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nutricionLayout">
+
+            <View
+                android:id="@+id/musculacion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="31" />
+
+            <ImageView
+                android:id="@+id/imageViewMusculacion"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/musculacion"
+                app:layout_constraintBottom_toBottomOf="@+id/musculacion"
+                app:layout_constraintEnd_toEndOf="@+id/musculacion"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@+id/musculacion"
+                app:layout_constraintTop_toTopOf="@+id/musculacion"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtMusculacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Musculación"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/musculacion"
+                app:layout_constraintEnd_toEndOf="@+id/musculacion"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/musculacion"
+                app:layout_constraintTop_toTopOf="@+id/musculacion"
+                app:layout_constraintVertical_bias="0"
+                tools:ignore="HardcodedText"
+
+                tools:targetApi="31" />
+
+            <TextView
+                android:id="@+id/txtMusculacionContenido"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Esta práctica no solo transforma la composición física sino que genera adaptaciones metabólicas profundas. Su ejecución técnica y sistemática estimula la hipertrofia de las fibras musculares, incrementando no solo la fuerza y el volumen, sino también la densidad ósea y el gasto calórico en reposo."
+                android:textAlignment="inherit"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/musculacion"
+                app:layout_constraintEnd_toEndOf="@+id/musculacion"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/musculacion"
+                app:layout_constraintTop_toTopOf="@+id/musculacion"
+                app:layout_constraintVertical_bias="0.95"
+                tools:ignore="HardcodedText"
+                tools:targetApi="31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Tarjeta 9: Yoga -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yogaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/musculacionLayout">
+
+            <View
+                android:id="@+id/yoga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="31" />
+
+            <ImageView
+                android:id="@+id/imageViewYoga"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/yoga"
+                app:layout_constraintBottom_toBottomOf="@+id/yoga"
+                app:layout_constraintEnd_toEndOf="@+id/yoga"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/yoga"
+                app:layout_constraintTop_toTopOf="@+id/yoga"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtYoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Yoga"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nutricionLayout"
+                tools:ignore="HardcodedText,NotSibling"
+                tools:targetApi="31" />
+
+            <TextView
+                android:id="@+id/txtYogaContenido"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Promueve la conexión con el momento presente, cultivando la atención plena y la autoconciencia. Más que un ejercicio, el yoga es una filosofía de vida que fomenta la paz interior y la claridad mental."
+                android:textAlignment="inherit"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/yoga"
+                app:layout_constraintEnd_toEndOf="@+id/yoga"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/yoga"
+                app:layout_constraintTop_toTopOf="@+id/yoga"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="HardcodedText"
+                tools:targetApi="31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Salir-->
+        <View
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yogaLayout" />
+
+        <TextView
+            android:id="@+id/txtSalir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="SALIR"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
+            app:layout_constraintEnd_toEndOf="@+id/btnSalir"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="@+id/btnSalir"
+            app:layout_constraintTop_toTopOf="@+id/btnSalir"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="HardcodedText" />
 
-            <!-- Tarjeta 1: Registrar Socios -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_marginEnd="15dp">
+        <ImageView
+            android:id="@+id/imageViewSalir"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/apagar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
+            app:layout_constraintEnd_toEndOf="@+id/btnSalir"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/btnSalir"
+            app:layout_constraintTop_toTopOf="@+id/btnSalir"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="ContentDescription" />
 
-                <View
-                    android:id="@+id/registrar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_image_view"
-                    tools:targetApi="31" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/mult_usuarios"
-                    app:layout_constraintBottom_toBottomOf="@+id/registrar"
-                    app:layout_constraintEnd_toEndOf="@+id/registrar"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/registrar"
-                    app:layout_constraintTop_toTopOf="@+id/registrar"
-                    app:layout_constraintVertical_bias="0.2"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:id="@+id/txtRegistrar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:text="REGISTRAR SOCIOS"
-                    android:textColor="@android:color/system_accent1_900"
-                    android:textSize="8sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/registrar"
-                    app:layout_constraintEnd_toEndOf="@+id/registrar"
-                    app:layout_constraintStart_toStartOf="@+id/registrar"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
-                    tools:ignore="HardcodedText"
-                    tools:targetApi="31" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <!-- Tarjeta 2: Cobrar Cuota -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_marginEnd="15dp">
-
-                <View
-                    android:id="@+id/viewCobrar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_image_view"
-                    tools:targetApi="31" />
-
-                <ImageView
-                    android:id="@+id/imageViewCobrar"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/billetera_azul"
-                    app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
-                    app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/viewCobrar"
-                    app:layout_constraintTop_toTopOf="@+id/viewCobrar"
-                    app:layout_constraintVertical_bias="0.3"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:id="@+id/txtCobrar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:text="COBRAR CUOTA"
-                    android:textColor="@android:color/system_accent1_900"
-                    android:textSize="8sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
-                    app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
-                    app:layout_constraintStart_toStartOf="@+id/viewCobrar"
-                    app:layout_constraintTop_toBottomOf="@+id/imageViewCobrar"
-                    tools:ignore="HardcodedText"
-                    tools:targetApi="31" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <!-- Tarjeta 3: Entregar Carnet -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_marginEnd="15dp">
-
-                <View
-                    android:id="@+id/carnet"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_image_view"
-                    tools:targetApi="31" />
-
-                <ImageView
-                    android:id="@+id/imageWhisky"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/carnet"
-                    app:layout_constraintBottom_toBottomOf="@+id/carnet"
-                    app:layout_constraintEnd_toEndOf="@+id/carnet"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/carnet"
-                    app:layout_constraintTop_toTopOf="@+id/carnet"
-                    app:layout_constraintVertical_bias="0.3"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:id="@+id/txtCarnet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:text="ENTREGAR CARNET"
-                    android:textColor="@android:color/system_accent1_900"
-                    android:textSize="8sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/carnet"
-                    app:layout_constraintEnd_toEndOf="@+id/carnet"
-                    app:layout_constraintStart_toStartOf="@+id/carnet"
-                    app:layout_constraintTop_toBottomOf="@+id/imageWhisky"
-                    tools:ignore="HardcodedText"
-                    tools:targetApi="31" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <!-- Tarjeta 4: Listar Socios -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_marginEnd="15dp">
-
-                <View
-                    android:id="@+id/socios"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_image_view"
-                    tools:targetApi="31" />
-
-                <ImageView
-                    android:id="@+id/imageViewSocios"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/lista"
-                    app:layout_constraintBottom_toBottomOf="@+id/socios"
-                    app:layout_constraintEnd_toEndOf="@+id/socios"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/socios"
-                    app:layout_constraintTop_toTopOf="@+id/socios"
-                    app:layout_constraintVertical_bias="0.5"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:id="@+id/txtSocios"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:text="LISTAR SOCIOS"
-                    android:textColor="@android:color/system_accent1_900"
-                    android:textSize="8sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/socios"
-                    app:layout_constraintEnd_toEndOf="@+id/socios"
-                    app:layout_constraintStart_toStartOf="@+id/socios"
-                    app:layout_constraintTop_toBottomOf="@+id/imageViewSocios"
-                    tools:ignore="HardcodedText"
-                    tools:targetApi="31" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <!-- Tarjeta 5: Vencimientos del Día -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_marginEnd="15dp">
-
-                <View
-                    android:id="@+id/vencimientos"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_image_view"
-                    tools:targetApi="31" />
-
-                <ImageView
-                    android:id="@+id/imageVencimientos"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/calendario"
-                    app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
-                    app:layout_constraintEnd_toEndOf="@+id/vencimientos"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/vencimientos"
-                    app:layout_constraintTop_toTopOf="@+id/vencimientos"
-                    app:layout_constraintVertical_bias="0.5"
-                    tools:ignore="ContentDescription" />
-
-                <TextView
-                    android:id="@+id/txtVencimientos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:text="VENCIMIENTOS DEL DÍA"
-                    android:textColor="@android:color/system_accent1_900"
-                    android:textSize="7sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
-                    app:layout_constraintEnd_toEndOf="@+id/vencimientos"
-                    app:layout_constraintStart_toStartOf="@+id/vencimientos"
-                    app:layout_constraintTop_toBottomOf="@+id/imageVencimientos"
-                    tools:ignore="HardcodedText"
-                    tools:targetApi="31" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-    <!-- Salir-->
-    <View
-        android:id="@+id/btnSalir"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp"
-        android:background="@android:color/holo_red_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.170"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.970" />
-
-    <TextView
-        android:id="@+id/txtSalir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="SALIR"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
-        app:layout_constraintEnd_toEndOf="@+id/btnSalir"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="@+id/btnSalir"
-        app:layout_constraintTop_toTopOf="@+id/btnSalir"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="HardcodedText" />
-
-    <ImageView
-        android:id="@+id/imageViewSalir"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/apagar"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
-        app:layout_constraintEnd_toEndOf="@+id/btnSalir"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/btnSalir"
-        app:layout_constraintTop_toTopOf="@+id/btnSalir"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="ContentDescription" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
