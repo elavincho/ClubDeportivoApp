@@ -1,6 +1,8 @@
 package com.elavincho.clubdeportivoapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,18 @@ class PantallaPrincipalActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        /*Botón Salir*/
+
+        val btnSalir = findViewById<View>(R.id.btnSalir)
+
+        btnSalir.setOnClickListener {
+            val intentSalir = Intent(this, MainActivity::class.java)
+            /* Por ultimo hay que llamar al método startActivity() y pasarle el intent*/
+            startActivity(intentSalir)
+        }
+
+
     }
 }

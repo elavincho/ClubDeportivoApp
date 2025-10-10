@@ -30,248 +30,255 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_club_deportivo"
             tools:ignore="ContentDescription" />
-
     </androidx.cardview.widget.CardView>
 
 
-    <!-- Registrar Socios -->
-    <View
-        android:id="@+id/registrar"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:background="@android:color/system_accent1_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
-        tools:targetApi="31" />
-
-    <TextView
-        android:id="@+id/txtRegistrar"
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="REGISTRAR SOCIOS"
-        android:textColor="@android:color/system_accent1_900"
-        android:textSize="8sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/registrar"
-        app:layout_constraintEnd_toEndOf="@+id/registrar"
-        app:layout_constraintHorizontal_bias="0.70"
-        app:layout_constraintStart_toStartOf="@+id/registrar"
-        app:layout_constraintTop_toTopOf="@+id/registrar"
-        app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText"
-        tools:targetApi="31" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/mult_usuarios"
-        app:layout_constraintBottom_toBottomOf="@+id/registrar"
-        app:layout_constraintEnd_toEndOf="@+id/registrar"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/registrar"
-        app:layout_constraintTop_toTopOf="@+id/registrar"
-        app:layout_constraintVertical_bias="0.2"
-        tools:ignore="ContentDescription" />
-
-    <!-- Cobrar Cuota, por ahora lo dejo abajo para poder cambiar el diseño-->
-    <View
-        android:id="@+id/viewCobrar"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:background="@android:color/system_accent1_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.25"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150"
-
-        tools:targetApi="31" />
-
-    <TextView
-        android:id="@+id/txtCobrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="COBRAR CUOTA"
-        android:textColor="@android:color/system_accent1_900"
-        android:textSize="8sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
-        app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="@+id/viewCobrar"
-        app:layout_constraintTop_toTopOf="@+id/viewCobrar"
-        app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText"
-        tools:targetApi="31" />
-
-    <ImageView
-        android:id="@+id/imageViewCobrar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/billetera_azul"
-        app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
-        app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/viewCobrar"
-        app:layout_constraintTop_toTopOf="@+id/viewCobrar"
-        app:layout_constraintVertical_bias="0.3"
-        tools:ignore="ContentDescription" />
-
-    <!-- Entregar Carnet -->
-    <View
-        android:id="@+id/carnet"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:background="@android:color/system_accent1_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150"
-        tools:targetApi="31" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <TextView
-        android:id="@+id/txtCarnet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="ENTREGAR CARNET"
-        android:textColor="@android:color/system_accent1_900"
-        android:textSize="8sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/carnet"
-        app:layout_constraintEnd_toEndOf="@+id/carnet"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="@+id/carnet"
-        app:layout_constraintTop_toTopOf="@+id/carnet"
-        app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText"
-        tools:targetApi="31" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-    <ImageView
-        android:id="@+id/imageWhisky"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/carnet"
-        app:layout_constraintBottom_toBottomOf="@+id/carnet"
-        app:layout_constraintEnd_toEndOf="@+id/carnet"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/carnet"
-        app:layout_constraintTop_toTopOf="@+id/carnet"
-        app:layout_constraintVertical_bias="0.3"
-        tools:ignore="ContentDescription" />
+            <!-- Tarjeta 1: Registrar Socios -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="15dp">
 
+                <View
+                    android:id="@+id/registrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_image_view"
+                    tools:targetApi="31" />
 
-    <!-- Listar Socios-->
-    <View
-        android:id="@+id/socios"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:background="@android:color/system_accent1_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150"
-        tools:targetApi="31" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mult_usuarios"
+                    app:layout_constraintBottom_toBottomOf="@+id/registrar"
+                    app:layout_constraintEnd_toEndOf="@+id/registrar"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/registrar"
+                    app:layout_constraintTop_toTopOf="@+id/registrar"
+                    app:layout_constraintVertical_bias="0.2"
+                    tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/txtSocios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="LISTAR SOCIOS"
-        android:textColor="@android:color/system_accent1_900"
-        android:textSize="8sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/socios"
-        app:layout_constraintEnd_toEndOf="@+id/socios"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="@+id/socios"
-        app:layout_constraintTop_toTopOf="@+id/socios"
-        app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText"
-        tools:targetApi="31" />
+                <TextView
+                    android:id="@+id/txtRegistrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="REGISTRAR SOCIOS"
+                    android:textColor="@android:color/system_accent1_900"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/registrar"
+                    app:layout_constraintEnd_toEndOf="@+id/registrar"
+                    app:layout_constraintStart_toStartOf="@+id/registrar"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="31" />
 
-    <ImageView
-        android:id="@+id/imageViewSocios"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/lista"
-        app:layout_constraintBottom_toBottomOf="@+id/socios"
-        app:layout_constraintEnd_toEndOf="@+id/socios"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/socios"
-        app:layout_constraintTop_toTopOf="@+id/socios"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <!-- Tarjeta 2: Cobrar Cuota -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="15dp">
 
-    <!-- Vencimientos del Día -->
-    <View
-        android:id="@+id/vencimientos"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:background="@android:color/system_accent1_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150"
+                <View
+                    android:id="@+id/viewCobrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_image_view"
+                    tools:targetApi="31" />
 
-        tools:targetApi="31" />
+                <ImageView
+                    android:id="@+id/imageViewCobrar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/billetera_azul"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
+                    app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/viewCobrar"
+                    app:layout_constraintTop_toTopOf="@+id/viewCobrar"
+                    app:layout_constraintVertical_bias="0.3"
+                    tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/txtVencimientos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_vertical"
-        android:text="VENCIMIENTOS DEL DÍA"
-        android:textColor="@android:color/system_accent1_900"
-        android:textSize="7sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
-        app:layout_constraintEnd_toEndOf="@+id/vencimientos"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="@+id/vencimientos"
-        app:layout_constraintTop_toTopOf="@+id/vencimientos"
-        app:layout_constraintVertical_bias="0.9"
-        tools:ignore="HardcodedText"
-        tools:targetApi="31" />
+                <TextView
+                    android:id="@+id/txtCobrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="COBRAR CUOTA"
+                    android:textColor="@android:color/system_accent1_900"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewCobrar"
+                    app:layout_constraintEnd_toEndOf="@+id/viewCobrar"
+                    app:layout_constraintStart_toStartOf="@+id/viewCobrar"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewCobrar"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="31" />
 
-    <ImageView
-        android:id="@+id/imageVencimientos"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/calendario"
-        app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
-        app:layout_constraintEnd_toEndOf="@+id/vencimientos"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/vencimientos"
-        app:layout_constraintTop_toTopOf="@+id/vencimientos"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Tarjeta 3: Entregar Carnet -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="15dp">
+
+                <View
+                    android:id="@+id/carnet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_image_view"
+                    tools:targetApi="31" />
+
+                <ImageView
+                    android:id="@+id/imageWhisky"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/carnet"
+                    app:layout_constraintBottom_toBottomOf="@+id/carnet"
+                    app:layout_constraintEnd_toEndOf="@+id/carnet"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/carnet"
+                    app:layout_constraintTop_toTopOf="@+id/carnet"
+                    app:layout_constraintVertical_bias="0.3"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtCarnet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="ENTREGAR CARNET"
+                    android:textColor="@android:color/system_accent1_900"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/carnet"
+                    app:layout_constraintEnd_toEndOf="@+id/carnet"
+                    app:layout_constraintStart_toStartOf="@+id/carnet"
+                    app:layout_constraintTop_toBottomOf="@+id/imageWhisky"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="31" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Tarjeta 4: Listar Socios -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="15dp">
+
+                <View
+                    android:id="@+id/socios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_image_view"
+                    tools:targetApi="31" />
+
+                <ImageView
+                    android:id="@+id/imageViewSocios"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/lista"
+                    app:layout_constraintBottom_toBottomOf="@+id/socios"
+                    app:layout_constraintEnd_toEndOf="@+id/socios"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/socios"
+                    app:layout_constraintTop_toTopOf="@+id/socios"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtSocios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="LISTAR SOCIOS"
+                    android:textColor="@android:color/system_accent1_900"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/socios"
+                    app:layout_constraintEnd_toEndOf="@+id/socios"
+                    app:layout_constraintStart_toStartOf="@+id/socios"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewSocios"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="31" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Tarjeta 5: Vencimientos del Día -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="15dp">
+
+                <View
+                    android:id="@+id/vencimientos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_image_view"
+                    tools:targetApi="31" />
+
+                <ImageView
+                    android:id="@+id/imageVencimientos"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/calendario"
+                    app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
+                    app:layout_constraintEnd_toEndOf="@+id/vencimientos"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/vencimientos"
+                    app:layout_constraintTop_toTopOf="@+id/vencimientos"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txtVencimientos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="VENCIMIENTOS DEL DÍA"
+                    android:textColor="@android:color/system_accent1_900"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/vencimientos"
+                    app:layout_constraintEnd_toEndOf="@+id/vencimientos"
+                    app:layout_constraintStart_toStartOf="@+id/vencimientos"
+                    app:layout_constraintTop_toBottomOf="@+id/imageVencimientos"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="31" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
     <!-- Salir-->
     <View
-        android:id="@+id/salir"
+        android:id="@+id/btnSalir"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="20dp"
@@ -293,11 +300,11 @@
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/salir"
-        app:layout_constraintEnd_toEndOf="@+id/salir"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
+        app:layout_constraintEnd_toEndOf="@+id/btnSalir"
         app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="@+id/salir"
-        app:layout_constraintTop_toTopOf="@+id/salir"
+        app:layout_constraintStart_toStartOf="@+id/btnSalir"
+        app:layout_constraintTop_toTopOf="@+id/btnSalir"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="HardcodedText" />
 
@@ -306,11 +313,11 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:src="@drawable/apagar"
-        app:layout_constraintBottom_toBottomOf="@+id/salir"
-        app:layout_constraintEnd_toEndOf="@+id/salir"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
+        app:layout_constraintEnd_toEndOf="@+id/btnSalir"
         app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/salir"
-        app:layout_constraintTop_toTopOf="@+id/salir"
+        app:layout_constraintStart_toStartOf="@+id/btnSalir"
+        app:layout_constraintTop_toTopOf="@+id/btnSalir"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="ContentDescription" />
 

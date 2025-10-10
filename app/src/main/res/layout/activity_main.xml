@@ -147,7 +147,7 @@
 
     <!-- Botón acceder-->
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/btnAcceder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
