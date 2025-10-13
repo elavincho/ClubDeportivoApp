@@ -287,8 +287,9 @@
 
             android:id="@+id/spinningLayout"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
             android:layout_margin="15dp"
+            android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
@@ -304,11 +305,11 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/spining"
-                app:layout_constraintBottom_toBottomOf="@+id/spinning"
-                app:layout_constraintEnd_toEndOf="@+id/spinning"
+                app:layout_constraintBottom_toBottomOf="@+id/spinningLayout"
+                app:layout_constraintEnd_toEndOf="@+id/spinningLayout"
                 app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@+id/spinning"
-                app:layout_constraintTop_toTopOf="@+id/spinning"
+                app:layout_constraintStart_toStartOf="@+id/spinningLayout"
+                app:layout_constraintTop_toTopOf="@+id/spinningLayout"
                 app:layout_constraintVertical_bias="0.2"
                 tools:ignore="ContentDescription" />
 
@@ -321,31 +322,32 @@
                 android:textColor="@android:color/system_accent1_900"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/spinning"
-                app:layout_constraintEnd_toEndOf="@+id/spinning"
-                app:layout_constraintHorizontal_bias="0.55"
-                app:layout_constraintStart_toStartOf="@+id/spinning"
-                app:layout_constraintTop_toTopOf="@+id/spinning"
-                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="@+id/spinningLayout"
+                app:layout_constraintEnd_toEndOf="@+id/spinningLayout"
+                app:layout_constraintHorizontal_bias="0.630"
+                app:layout_constraintStart_toStartOf="@+id/spinningLayout"
+                app:layout_constraintTop_toTopOf="@+id/spinningLayout"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
 
                 tools:targetApi="31" />
 
             <TextView
                 android:id="@+id/txtSpinningContenido"
-                android:layout_width="240dp"
+                android:layout_width="220dp"
                 android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
                 android:fontFamily="sans-serif-light"
+                android:padding="10dp"
                 android:text="Esta disciplina no solo mejora significativamente la capacidad pulmonar y la resistencia física, sino que también es excelente para quemar calorías y fortalecer el sistema cardiovascular."
-                android:textAlignment="inherit"
                 android:textColor="@android:color/system_accent1_900"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="@+id/spinning"
-                app:layout_constraintEnd_toEndOf="@+id/spinning"
+                app:layout_constraintBottom_toBottomOf="@+id/spinningLayout"
+                app:layout_constraintEnd_toEndOf="@+id/spinningLayout"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/spinning"
-                app:layout_constraintTop_toTopOf="@+id/spinning"
+                app:layout_constraintStart_toStartOf="@+id/spinningLayout"
+                app:layout_constraintTop_toTopOf="@+id/spinningLayout"
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
@@ -357,11 +359,30 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/boxeoLayout"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
             android:layout_margin="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinningLayout">
+
+            <TextView
+                android:id="@+id/txtBoxeoContenido"
+                android:layout_width="220dp"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:text=" Su práctica desarrolla una condición física excepcional, mejorando la resistencia cardiovascular, la fuerza explosiva, la velocidad de reacción y la coordinación."
+                android:textAlignment="inherit"
+                android:textColor="@android:color/system_accent1_900"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/boxeoLayout"
+                app:layout_constraintEnd_toEndOf="@+id/boxeoLayout"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="@+id/boxeoLayout"
+                app:layout_constraintTop_toTopOf="@+id/boxeoLayout"
+                app:layout_constraintVertical_bias="0.95"
+                tools:ignore="HardcodedText"
+                tools:targetApi="31" />
 
             <View
                 android:id="@+id/boxeo"
@@ -374,11 +395,11 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/boxeo"
-                app:layout_constraintBottom_toBottomOf="@+id/boxeo"
-                app:layout_constraintEnd_toEndOf="@+id/boxeo"
-                app:layout_constraintHorizontal_bias="0.95"
-                app:layout_constraintStart_toStartOf="@+id/boxeo"
-                app:layout_constraintTop_toTopOf="@+id/boxeo"
+                app:layout_constraintBottom_toBottomOf="@+id/boxeoLayout"
+                app:layout_constraintEnd_toEndOf="@+id/boxeoLayout"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="@+id/boxeoLayout"
+                app:layout_constraintTop_toTopOf="@+id/boxeoLayout"
                 app:layout_constraintVertical_bias="0.2"
                 tools:ignore="ContentDescription" />
 
@@ -391,33 +412,14 @@
                 android:textColor="@android:color/system_accent1_900"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/boxeo"
-                app:layout_constraintEnd_toEndOf="@+id/boxeo"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@+id/boxeo"
-                app:layout_constraintTop_toTopOf="@+id/boxeo"
-                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="@+id/boxeoLayout"
+                app:layout_constraintEnd_toEndOf="@+id/boxeoLayout"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="@+id/boxeoLayout"
+                app:layout_constraintTop_toTopOf="@+id/boxeoLayout"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
 
-                tools:targetApi="31" />
-
-            <TextView
-                android:id="@+id/txtBoxeoContenido"
-                android:layout_width="240dp"
-                android:layout_height="70dp"
-                android:fontFamily="sans-serif-light"
-                android:text=" Su práctica desarrolla una condición física excepcional, mejorando la resistencia cardiovascular, la fuerza explosiva, la velocidad de reacción y la coordinación."
-                android:textAlignment="inherit"
-                android:textColor="@android:color/system_accent1_900"
-                android:textSize="12sp"
-                android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="@+id/boxeo"
-                app:layout_constraintEnd_toEndOf="@+id/boxeo"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@+id/boxeo"
-                app:layout_constraintTop_toTopOf="@+id/boxeo"
-                app:layout_constraintVertical_bias="0.95"
-                tools:ignore="HardcodedText"
                 tools:targetApi="31" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -427,30 +429,13 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/nutricionLayout"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="140dp"
             android:layout_margin="15dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_image_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/boxeoLayout">
-
-            <View
-                android:id="@+id/nutricion"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:targetApi="31" />
-
-            <ImageView
-                android:id="@+id/imageViewNutricion"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/nutricionista"
-                app:layout_constraintBottom_toBottomOf="@+id/nutricion"
-                app:layout_constraintEnd_toEndOf="@+id/nutricion"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@+id/nutricion"
-                app:layout_constraintTop_toTopOf="@+id/nutricion"
-                app:layout_constraintVertical_bias="0.2"
-                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/txtNutricion"
@@ -461,11 +446,11 @@
                 android:textColor="@android:color/system_accent1_900"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/nutricion"
-                app:layout_constraintEnd_toEndOf="@+id/nutricion"
-                app:layout_constraintHorizontal_bias="0.605"
-                app:layout_constraintStart_toStartOf="@+id/nutricion"
-                app:layout_constraintTop_toTopOf="@+id/nutricion"
+                app:layout_constraintBottom_toBottomOf="@+id/nutricionLayout"
+                app:layout_constraintEnd_toEndOf="@+id/nutricionLayout"
+                app:layout_constraintHorizontal_bias="0.646"
+                app:layout_constraintStart_toStartOf="@+id/nutricionLayout"
+                app:layout_constraintTop_toTopOf="@+id/nutricionLayout"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
 
@@ -473,22 +458,35 @@
 
             <TextView
                 android:id="@+id/txtNutricionContenido"
-                android:layout_width="240dp"
+                android:layout_width="220dp"
                 android:layout_height="70dp"
                 android:fontFamily="sans-serif-light"
-                android:text="La supervisión profesional garantiza que cada deportista reciba la atención necesaria para potenciar su entrenamiento, competir al máximo nivel y mantener un estado de salud óptimo, convirtiendo la alimentación en una ventaja competitiva decisiva."
+                android:text="La supervisión profesional garantiza que cada deportista reciba la atención necesaria para potenciar su entrenamiento, competir al máximo nivel y mantener un estado de salud óptimo."
                 android:textAlignment="inherit"
                 android:textColor="@android:color/system_accent1_900"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="@+id/nutricion"
-                app:layout_constraintEnd_toEndOf="@+id/nutricion"
+                app:layout_constraintBottom_toBottomOf="@+id/nutricionLayout"
+                app:layout_constraintEnd_toEndOf="@+id/nutricionLayout"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/nutricion"
-                app:layout_constraintTop_toTopOf="@+id/nutricion"
+                app:layout_constraintStart_toStartOf="@+id/nutricionLayout"
+                app:layout_constraintTop_toTopOf="@+id/nutricionLayout"
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
+
+            <ImageView
+                android:id="@+id/imageViewNutricion"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/nutricionista"
+                app:layout_constraintBottom_toBottomOf="@+id/nutricionLayout"
+                app:layout_constraintEnd_toEndOf="@+id/nutricionLayout"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/nutricionLayout"
+                app:layout_constraintTop_toTopOf="@+id/nutricionLayout"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="ContentDescription" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
