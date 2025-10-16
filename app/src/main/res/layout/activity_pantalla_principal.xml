@@ -378,12 +378,6 @@
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
 
-            <View
-                android:id="@+id/boxeo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:targetApi="31" />
-
             <ImageView
                 android:id="@+id/imageViewBoxeo"
                 android:layout_width="120dp"
