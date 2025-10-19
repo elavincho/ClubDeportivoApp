@@ -552,22 +552,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/musculacionLayout">
 
-            <View
-                android:id="@+id/yoga"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:targetApi="31" />
-
             <ImageView
                 android:id="@+id/imageViewYoga"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/yoga"
-                app:layout_constraintBottom_toBottomOf="@+id/yoga"
-                app:layout_constraintEnd_toEndOf="@+id/yoga"
+                app:layout_constraintBottom_toBottomOf="@+id/yogaLayout"
+                app:layout_constraintEnd_toEndOf="@+id/yogaLayout"
                 app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@+id/yoga"
-                app:layout_constraintTop_toTopOf="@+id/yoga"
+                app:layout_constraintStart_toStartOf="@+id/yogaLayout"
+                app:layout_constraintTop_toTopOf="@+id/yogaLayout"
                 app:layout_constraintVertical_bias="0.2"
                 tools:ignore="ContentDescription" />
 
@@ -596,11 +590,11 @@
                 android:textColor="@android:color/system_accent1_900"
                 android:textSize="12sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="@+id/yoga"
-                app:layout_constraintEnd_toEndOf="@+id/yoga"
+                app:layout_constraintBottom_toBottomOf="@+id/yogaLayout"
+                app:layout_constraintEnd_toEndOf="@+id/yogaLayout"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/yoga"
-                app:layout_constraintTop_toTopOf="@+id/yoga"
+                app:layout_constraintStart_toStartOf="@+id/yogaLayout"
+                app:layout_constraintTop_toTopOf="@+id/yogaLayout"
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
