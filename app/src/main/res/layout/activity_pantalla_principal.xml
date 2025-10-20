@@ -323,7 +323,6 @@
                 app:layout_constraintTop_toTopOf="@+id/spinningLayout"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
-
                 tools:targetApi="31" />
 
             <TextView
@@ -345,7 +344,6 @@
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -407,7 +405,6 @@
                 app:layout_constraintTop_toTopOf="@+id/boxeoLayout"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
-
                 tools:targetApi="31" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -441,7 +438,6 @@
                 app:layout_constraintTop_toTopOf="@+id/nutricionLayout"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
-
                 tools:targetApi="31" />
 
             <TextView
@@ -475,7 +471,6 @@
                 app:layout_constraintTop_toTopOf="@+id/nutricionLayout"
                 app:layout_constraintVertical_bias="0.2"
                 tools:ignore="ContentDescription" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -538,7 +533,6 @@
                 app:layout_constraintVertical_bias="0.95"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -598,7 +592,6 @@
                 app:layout_constraintVertical_bias="1.0"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -643,7 +636,6 @@
             app:layout_constraintTop_toTopOf="@+id/btnSalir"
             app:layout_constraintVertical_bias="0.5"
             tools:ignore="ContentDescription" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
