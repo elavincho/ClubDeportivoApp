@@ -13,7 +13,6 @@
         tools:context=".PantallaPrincipalActivity"
         tools:ignore="ExtraText">
 
-
         <!-- Header Club Deportivo -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
@@ -95,7 +94,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageView"
                         tools:ignore="HardcodedText"
                         tools:targetApi="31" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <!-- Tarjeta 2: Cobrar Cuota -->
@@ -140,7 +138,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageViewCobrar"
                         tools:ignore="HardcodedText"
                         tools:targetApi="31" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <!-- Tarjeta 3: Entregar Carnet -->
@@ -185,7 +182,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageWhisky"
                         tools:ignore="HardcodedText"
                         tools:targetApi="31" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <!-- Tarjeta 4: Listar Socios -->
@@ -230,7 +226,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageViewSocios"
                         tools:ignore="HardcodedText"
                         tools:targetApi="31" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <!-- Tarjeta 5: Vencimientos del Día -->
@@ -275,7 +270,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageVencimientos"
                         tools:ignore="HardcodedText"
                         tools:targetApi="31" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
@@ -406,7 +400,6 @@
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
