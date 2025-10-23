@@ -30,7 +30,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/icono_club_deportivo"
             tools:ignore="ContentDescription" />
-
     </androidx.cardview.widget.CardView>
 
     <!-- Titulo Club Deportivo -->
@@ -88,9 +87,7 @@
         app:layout_constraintVertical_bias="0.63"
         android:background="@drawable/bg_text_input"
         tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="114dp"
-        >
-
+        tools:layout_editor_absoluteY="114dp">
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
@@ -126,9 +123,7 @@
         app:layout_constraintStart_toStartOf="@+id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
         app:layout_constraintVertical_bias="0.75"
-        app:passwordToggleEnabled="true"
-        >
-
+        app:passwordToggleEnabled="true">
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
