@@ -275,7 +275,6 @@
             </LinearLayout>
         </HorizontalScrollView>
 
-
         <!-- Tarjeta 6: Spinning -->
         <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -341,7 +340,6 @@
                 tools:targetApi="31" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         <!-- Tarjeta 7: Boxeo -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/boxeoLayout"
@@ -402,7 +400,6 @@
                 tools:ignore="HardcodedText"
                 tools:targetApi="31" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         <!-- Tarjeta 7: Nutrición -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -466,7 +463,6 @@
                 app:layout_constraintVertical_bias="0.2"
                 tools:ignore="ContentDescription" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         <!-- Tarjeta 8: Musculación -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -592,12 +588,13 @@
         <!-- Salir-->
         <View
             android:id="@+id/btnSalir"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="20dp"
             android:background="@drawable/boton_salir"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintTop_toBottomOf="@+id/yogaLayout" />
 
         <TextView
@@ -612,7 +609,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/btnSalir"
             app:layout_constraintEnd_toEndOf="@+id/btnSalir"
-            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="@+id/btnSalir"
             app:layout_constraintTop_toTopOf="@+id/btnSalir"
             app:layout_constraintVertical_bias="0.5"
