@@ -8,7 +8,7 @@
         android:right="2dp"
         android:bottom="0dp">
         <shape android:shape="rectangle">
-            <corners android:radius="25dp" />
+            <corners android:radius="10dp" />
             <solid android:color="#40000000" /> <!-- Color de sombra (negro semi-transparente) -->
         </shape>
     </item>
@@ -27,7 +27,7 @@
 
             <!-- Esquinas ligeramente redondeadas -->
             <corners
-                android:radius="25dp" />
+                android:radius="10dp" />
 
             <!-- Fondo gris -->
             <solid
