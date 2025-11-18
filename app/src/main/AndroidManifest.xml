@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoApp">
         <activity
+            android:name=".ListarSocioActivity"
+            android:exported="false" />
+        <activity
             android:name=".EntregarCarnetActivity"
             android:exported="false" />
         <activity
